@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<!-- cara -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+
+
+  <title>肝鬱氣滯調理</title>
+  <meta name="description" content="了解肝鬱氣滯嘅症狀同調理方法，推薦玫瑰花茶、陳皮等疏肝食材。">
+  <meta name="keywords" content="肝鬱氣滯, 疏肝, 玫瑰花茶, 陳皮, 中醫養生">
+<style>
+body{
+background-color: lightgreen;
+
+
+}
+
+.container{
+  background-color: whitesmoke;
+  width: 70%;
+
+
+}
+
+
+.a{
+    background-color: lightgreen;
+}
+
+
+li a, .dropbtn {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: greenyellow;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ .dropbtn{
+background-color: lightgreen;
+border: forestgreen 10px;
+
+}
+        
+.active{
+    border: forestgreen 10px;
+}
+
+
+
+
+
+.content-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: lightgreen;
+  opacity: 90%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-card img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+content-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-card ul li {
+  margin-bottom: 10px;
+}
+
+.content-card a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+  margin:auto;
+  display: flex;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: green;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+        .rcorners1{
+        border-radius: 100px 0px 100px;
+        background-color: yellowgreen;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners2{
+        border-radius: 0 100px 0px;
+        background-color: green;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners3{
+        border-radius: 100px 0px 100px;
+        background-color: yellowgreen;
+        padding: 70px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners4{
+        border-radius: 0px 100px 0px;
+        background-color: green;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+       
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="a" style="width: 100%;">
+<div class="row">
+<div class="dropdown">
+  <button class="dropbtn">中醫症狀</button>
+  <div class="dropdown-content">
+        <a href="yin-care.html">陰虛火旺</a>
+      <a href="yang-care.html">陽虛</a>
+      <a href="qi-care.html">氣虛</a>
+      <a href="phlegm-care.html">肝鬱氣滯</a>    
+      <a href="damp-care.html">濕氣重</a>
+      <a href="liver-care.html">痰濕體質</a>
+  </div>
+
+</div>
+<a class="dropdown">
+    <button class="dropbtn">
+    <a href="quiz.html" style="color: black;">QUIZ</a></button>
+</div>
+
+</div>
+
+<div class="container">
+      <header>
+    <h1>肝鬱氣滯調理</h1>
+    <p>用天然食材疏肝理氣，改善情緒焦躁同胸悶</p>
+  </header>
+</div>
+  <div class="container">
+<div class="row">
+  <div class="col-5">
+    <div class="content-card">
+      <div class="row">
+<div class="rcorners2">焦躁</div>
+<div class="rcorners1">胸悶</div>
+</div>
+      <div class="row">
+<div class="rcorners3">月經</div>
+<div class="rcorners4">睡眠</div>
+</div>
+
+
+<br>      
+ <h2>肝鬱氣滯嘅症狀</h2>
+      <ul>
+        <li>情緒焦躁或易怒</li>
+        <li>胸悶或肋部脹痛</li>
+        <li>經期不適或乳房脹痛</li>
+        <li>睡眠質素差或嘆氣頻繁</li>
+      </ul>
+      <p>肝鬱氣滯通常由壓力大、情緒壓抑或生活不規律引起，中醫建議疏肝解鬱來調理。</p>
+    </div></div>
+<div class="col-7">
+    <div class="content-card" style="width: fit-content;">
+      <h2>推薦疏肝食材</h2>
+<div class="row">
+  <div class="col-6">
+<div class="card-columns ">   <!-- card col 2.3-->
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="aaa.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>玫瑰花</h1> 
+      <h3>疏肝解鬱，適合泡茶。</h3> 
+      <p></p></a>
+    </div></div></div></div></div>
+
+    <div class="col-6">
+<div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="bbb.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>陳皮</h1> 
+      <h3>理氣健脾，可加喺湯或茶中。</h3> 
+      <p></p></a>
+    </div></div></div></div>
+</div></div>
+<br>
+<div class="row">
+  <div class="col-6">
+ <div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ccc.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>佛手柑</h1> 
+      <h4>舒肝理氣，常用於調味。</h4> 
+      <p></p></a>
+    </div></div></div></div>
+</div>
+    
+      <div class="col-6">
+   <div class="card-columns">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ddd.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>薄荷</h1> 
+      <h3>清肝解郁，適合同茶飲搭配。</h3> 
+      <p></p></a>
+    </div></div></div></div>
+</div></div>
+
+      <a href="herbs.html">探索更多草本與種子</a>
+    
+</div></div>
+
+        <div class="col-5">
+    <div class="content-card">
+     <h2>推薦飲品</h2>
+      <ul>
+        <li><strong>玫瑰花茶</strong>：疏肝解鬱，舒緩情緒。</li>
+        <li><strong>陳皮薄荷茶</strong>：理氣醒脾，適合日常飲用。</li>
+      </ul>
+      <a href="tea.html">查看更多茶飲建議</a>
+</div>    </div>
+<div class="col-5">
+    <div class="content-card">
+        <h2>簡單食譜：玫瑰陳皮茶</h2>
+        <br>
+        <img src="eee.jfif" width="300px">
+        <p>材料：玫瑰花5g、陳皮3g、熱水300ml</p>
+      <p>做法：玫瑰花同陳皮用熱水沖泡10分鐘，過濾後溫飲。</p>
+      <p>功效：疏肝理氣，舒緩情緒壓力。</p>
+</div></div></div></div>
+</div>
+  <footer>
+    <p>© 2025 My Phyto Diet | <a href="https://your-affiliate-link.com">推薦有機桑葚</a></p>
+  </footer>
+</body>
+</div>
+</html>

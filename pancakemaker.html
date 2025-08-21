@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+        img {
+            width: 500px; /* 初始大小 */
+            transition: transform 0.3s ease; /* 動畫效果 */
+            cursor: pointer; /* 滑鼠懸停時顯示手型 */
+        }
+        .enlarged {
+            transform: scale(1.5); /* 放大 1.5 倍 */
+        }
+
+
+        .select-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #black;
+            border: solid 1px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        .select-button:hover {
+            background-color: #lightgrey;
+            transform: translateY(-2px);
+        }
+
+        .select-button:active {
+            transform: translateY(0);
+        }
+
+        .select-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px grey;
+        }
+
+  .checkout-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: green;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .checkout-btn:hover {
+      background-color: lightcoral;
+    }
+    .checkout-btn:active {
+      background-color: #1e7e34;
+    }
+    @media (max-width: 600px) {
+      .checkout-btn {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+    .gallery {
+            display: flex;
+            gap: 15px; /* 增加間距以避免懸停放大時重疊 */
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .thumbnail {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, top 0.3s ease, left 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        .thumbnail:hover {
+            transform: scale(1.2); /* 懸停放大 1.2 倍 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+        .thumbnail.enlarged {
+            transform: scale(2); /* 點擊放大 2 倍 */
+            position: fixed; /* 使用 fixed 定位到視窗中央 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(2); /* 置中並放大 */
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+    /* font */
+    .savate{
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+
+/* navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightyellow;
+}
+
+
+/* dropdown */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+ </style>
+
+
+
+
+
+    <title>Pancake Maker</title>
+
+
+
+    <!-- announcemant bar -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  
+
+    
+
+</head>
+<body>
+    <header>
+        <!-- announcement bar -->
+
+        <div class="w3-flex" style="gap: 3px;flex-direction: column;text-align:center; background-color: black; color: white">
+          <h3 id="subtitle"></h3>
+      <script>
+      const subtitles = [
+          "WORLDWIDE FREESHIPPING",
+          "FIRST20 -SIGN UP FOR 20% OFF YOUR FIRST PURCHASE"
+      ];
+      
+      const subtitleElement = document.getElementById('subtitle');
+      
+      // 當前字幕索引
+      let currentIndex = 0;
+      
+      // 切換字幕函數
+      function changeSubtitle() {
+          subtitleElement.textContent = subtitles[currentIndex];
+          currentIndex = (currentIndex + 1) % subtitles.length; // 循環索引
+      }
+      // 每 3 秒執行一次
+      setInterval(changeSubtitle, 3000);
+      
+      // 初始顯示第一個字幕
+      changeSubtitle();
+      </script>
+      </div>
+
+
+
+
+
+<!-- navagation bar -->
+
+   <ul>
+    <li><a href="intro.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="checkout.html">Shopping Bag</a></li>
+  </ul>
+
+
+
+
+
+    </header>
+
+
+<!-- side bar -->
+
+    <div class="sidenav">
+      <a href="Kitchenware.html">Kitchenware</a>
+      <a href="Petsupplies.html">Pet suppllies</a>
+    </div>
+    
+
+    
+    <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="savate">
+    <div class="container">
+        <!--#####################START HERE######################-->
+
+        <!-- VERTICAL ALIGNMENT -->
+        <div class="container">
+            <div class="row">
+                <div class="col-5" style="background-color: white;">
+
+                    <div class="gallery">
+                        <img src="pancakemaker.jpeg" class="thumbnail" alt="Image 1" >
+                        <img src="pm3.jpeg" class="thumbnail" alt="Image 2">
+                      </div>
+                
+                    <script>
+                        const thumbnails = document.querySelectorAll('.thumbnail');
+                
+                        thumbnails.forEach(thumbnail => {
+                            thumbnail.addEventListener('click', () => {
+                                // 如果已有放大圖片，先恢復
+                                const enlarged = document.querySelector('.enlarged');
+                                if (enlarged && enlarged !== thumbnail) {
+                                    enlarged.classList.remove('enlarged');
+                                }
+                                // 切換當前圖片的放大狀態
+                                thumbnail.classList.toggle('enlarged');
+                            });
+                        });
+                    </script>
+  
+
+</div>
+
+                <div class="col-7" style="background-color:whitesmoke;"><h1 class="savate">Pancake Maker</h1>
+                    <p><h3></h3><strike>$129.99USD</strike></h3><h2 class="savate">$69.99 USD</h2>
+                        <h4 class="savate">Volts</h4>
+                         <button class="select-button">220V for Europe</button>
+                          <button class="select-button">110V For US</button>
+                        <br><br>
+                        <h4 class="savate">Quantity</h4> 
+                        <input type="number" min="1" max="10" value=0 step="1">
+                        <br><br>
+                
+                       <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                        <script> function proceedToCheckout() {
+                          fetch("database.json")
+  .then(response => response.json()) // 將回應轉為 JSON（或其他格式）
+  .then(data => console.log(data[0]))   // 處理數據
+  window.location.href = 'checkout.html';  
+    localStorage.setItem("product",JSON.stringify({"name":"g","quantity":3}));
+    }
+  </script>
+                            <br><br>
+                            <p>Perfect for busy mornings or creative cooking sessions, this crepe maker is ideal for whipping up French crepes, Chinese pancakes, or even small pizzas and fried eggs. Its compact size and portability make it a convenient tool for any kitchen, suitable for both novice and experienced cooks.</p>
+                                    <br><br>                        
+                              <video width="300" height="340" controls>
+                                <source src="pm.mp4" type="video/mp4">
+                              </video> 
+                              
+                                <h4>Features</h4>
+                                1.  Quick Heating: The crepe maker heats up in just 15 seconds, with heat distributed evenly across the pan.
+                                <br>
+                                2.  Non-Stick Surface: The non-stick coating ensures that crepes or other foods can be cooked and removed effortlessly without burning or sticking.
+                                <br>
+                                3.  Versatility: Beyond crepes, this device can be used for frying, grilling, or baking, making it a multifunctional kitchen tool.
+                                <br>
+                                4.  Ease of Use: The red power button on the handle simplifies operation, and the appliance comes with a power cord for easy plug-in use.
+                                 <br>
+                                
+                              
+
+
+                                <br><br>
+                                <div class="img">
+                                <img src="pm2.jpeg" width="600">
+                                <br><br>
+                                <img src="pm.jpeg" width="1400">
+                                <br><br>
+                                </div>
+
+
+                            <h4>Specification</h4>
+                            <img src="pm5.jpeg">
+                            <br><br>
+                            <p>Enhance your cooking routine with this durable, easy-to-use, and multifunctional electric crepe maker, bringing delicious and consistent results to your table with minimal effort!</p>
+
+                         
+
+                            </p>
+                            
+
+                          </div>
+
+                           </div>
+           </div>
+
+
+</div>
+
+        </body>
+
+
+</html>

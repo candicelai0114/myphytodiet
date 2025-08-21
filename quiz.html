@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>體質測試</title>
+  <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<!-- cara -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+
+
+
+<style>
+    body{
+background-color: lightgreen;
+
+    }
+
+.container{
+    
+text-align: center;
+}
+
+.a{
+    background-color: lightgreen;
+}
+
+
+li a, .dropbtn {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: greenyellow;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ .dropbtn{
+background-color: lightgreen;
+border: forestgreen 10px;
+
+}
+        
+.active{
+    border: forestgreen 10px;
+}
+
+
+        .rcorners1{
+        border-radius: 100px 0px 100px;
+        background-color: yellowgreen;
+        padding: 70px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 700;
+        }
+
+
+                .rcorners2{
+        border-radius: 0 100px 0px;
+        background-color: green;
+        padding: 30px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 700;
+        }
+
+                .rcorners3{
+        border-radius: 100px 0px;
+        background-color: darkgreen;
+        padding: 30px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 700;
+        }
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="a" style="width: 100%;">
+<div class="row">
+<div class="dropdown">
+  <button class="dropbtn">中醫症狀</button>
+  <div class="dropdown-content">
+        <a href="yin-care.html">陰虛火旺</a>
+      <a href="yang-care.html">陽虛</a>
+      <a href="qi-care.html">氣虛</a>
+      <a href="phlegm-care.html">肝鬱氣滯</a>    
+      <a href="damp-care.html">濕氣重</a>
+      <a href="liver-care.html">痰濕體質</a>
+  </div>
+
+</div>
+<a class="dropdown">
+    <button class="dropbtn">
+    <a href="quiz.html" style="color: black;">QUIZ</a></button>
+</div>
+
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+    <div class="container">
+            <div class="row">
+<div class="rcorners1"></div>
+<div class="rcorners2"></div></div>
+</div>
+<br>
+<div class="rcorners2"></div>
+            <div class="row">
+<div class="rcorners1"></div>
+<div class="rcorners3"></div>
+<div class="rcorners2"></div></div>
+<div class="row">
+<div class="rcorners2"></div>
+<div class="rcorners3"></div>
+</div>
+<div class="rcorners1"></div>
+
+</div>
+    
+    
+
+<div class="col-8" style="background-color: white; width: 40%; margin: auto; border: grey dashed 5px">
+    <div class="container">
+ <h1>中醫體質測試</h1>
+    <p>回答以下問題，了解你嘅體質同調理方法</p>
+  </header>
+
+  <section>
+    <form id="quizForm" onsubmit="checkResult(event)">
+      <div class="question">
+        <p>1. 你有冇容易疲倦或全身無力？<input type="checkbox" id="qiDef1" name="symptom"></p>
+        <p>2. 你有冇手腳冰冷或怕冷？<input type="checkbox" id="yangDef1" name="symptom"></p>
+        <p>3. 你有冇口乾或盜汗？<input type="checkbox" id="yinDef1" name="symptom"></p>
+        <p>4. 你有冇情緒焦躁或胸悶？<input type="checkbox" id="liverStag1" name="symptom"></p>
+        <p>5. 你有冇身體沉重或水腫？<input type="checkbox" id="damp1" name="symptom"></p>
+        <p>6. 你有冇肥胖或皮膚油膩？<input type="checkbox" id="phlegm1" name="symptom"></p>
+        <p>7. 你有冇氣短或說話聲音弱？<input type="checkbox" id="qiDef2" name="symptom"></p>
+        <p>8. 你有冇大便黏膩或消化慢？<input type="checkbox" id="damp2" name="symptom"></p>
+        <p>9. 你有冇經期不適或情緒易怒？<input type="checkbox" id="liverStag2" name="symptom"></p>
+        <p>10. 你有冇頭暈或痰多？<input type="checkbox" id="phlegm2" name="symptom"></p>
+        <p>11. 你有冇腰膝酸軟或性功能減退？<input type="checkbox" id="yangDef2" name="symptom"></p>
+        <p>12. 你有冇盜汗或睡眠質素差？<input type="checkbox" id="yinDef2" name="symptom"></p>
+      </div>
+      <button type="submit">提交</button>
+    </form>
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 My Phyto Diet | <a href="https://your-affiliate-link.com">推薦養生產品</a></p>
+  </footer>
+
+  <script>
+    function checkResult(event) {
+      event.preventDefault();
+      let yinScore = 0, qiScore = 0, yangScore = 0, liverScore = 0, dampScore = 0, phlegmScore = 0;
+
+      // 計分
+      if (document.getElementById('yinDef1').checked || document.getElementById('yinDef2').checked) yinScore++;
+      if (document.getElementById('qiDef1').checked || document.getElementById('qiDef2').checked) qiScore++;
+      if (document.getElementById('yangDef1').checked || document.getElementById('yangDef2').checked) yangScore++;
+      if (document.getElementById('liverStag1').checked || document.getElementById('liverStag2').checked) liverScore++;
+      if (document.getElementById('damp1').checked || document.getElementById('damp2').checked) dampScore++;
+      if (document.getElementById('phlegm1').checked || document.getElementById('phlegm2').checked) phlegmScore++;
+
+      // 判斷主要體質
+      let maxScore = Math.max(yinScore, qiScore, yangScore, liverScore, dampScore, phlegmScore);
+      let result = '你嘅體質平衡，繼續保持！';
+      let link = '';
+
+      if (maxScore > 0) {
+        if (yinScore === maxScore) { result = '你可能有陰虛火旺傾向'; link = '<a href="yin-care.html">了解更多</a>'; }
+        else if (qiScore === maxScore) { result = '你可能有氣虛傾向'; link = '<a href="qi-care.html">了解更多</a>'; }
+        else if (yangScore === maxScore) { result = '你可能有陽虛傾向'; link = '<a href="yang-care.html">了解更多</a>'; }
+        else if (liverScore === maxScore) { result = '你可能有肝鬱氣滯傾向'; link = '<a href="liver-care.html">了解更多</a>'; }
+        else if (dampScore === maxScore) { result = '你可能有濕氣重傾向'; link = '<a href="damp-care.html">了解更多</a>'; }
+        else if (phlegmScore === maxScore) { result = '你可能有痰濕體質傾向'; link = '<a href="phlegm-care.html">了解更多</a>'; }
+      }
+
+       document.getElementById('result').innerHTML = result + ' ' + link;
+    }
+  </script>
+  </div></div>
+        <div class="col-2">
+<div class="rcorners1"></div>
+<div class="rcorners2"></div>
+
+<br>
+            <div class="row">
+<div class="rcorners1"></div>
+<div class="rcorners3"></div>
+<div class="rcorners2"></div></div>
+<div class="row">
+<div class="rcorners2"></div>
+<div class="rcorners3"></div>
+</div>
+<div class="row">
+<div class="rcorners1"></div>
+<div class="rcorners2"></div>
+</div></div>
+    
+
+
+</div></div>
+</body>
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<!-- cara -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+        
+        
+        
+        
+        <style>
+body{
+    background-color:lightgreen;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin:auto;
+  display: flex;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: green;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+             .rcorners1{
+        border-radius: 200px 400px;
+        background-color: burlywood;
+        padding: 70px;
+        width: 50px;
+        height: 50px;
+        font-size:xx-large;
+
+    }
+
+        .rcorners2{
+        border-radius: 400px 200px ;
+        background-color: lightsalmon;
+        padding: 70px;
+        width: 50;
+        height: 50px;
+        font-size: xx-large;
+        }
+
+                .rcorners3{
+        border-radius: 400px 200px;
+        background-color: lightsalmon;
+        padding: 70px;
+        width: 50;
+        height: 50;
+        font-size: xx-large;
+        }
+
+                .rcorners4{
+        border-radius: 200px 400px ;
+        background-color: lightsalmon;
+        padding: 70px;
+        width: 50;
+        height: 50px;
+        font-size: xx-large;
+        }
+
+         .rcorners5{
+        border-radius: 100px 400px;
+        background-color: burlywood;
+        padding: 70px;
+        width: 50px;
+        height: 50px;
+        font-size:xx-large;
+
+    }
+
+        .rcorners6{
+        border-radius: 400px 100px ;
+        background-color: lightpink;
+        padding: 70px;
+        width: 50;
+        height: 50px;
+        font-size: xx-large;
+        }
+
+
+
+
+/* font */
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lihtgreen;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+
+
+
+
+
+
+        </style>
+
+<!-- font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Share+Tech&display=swap" rel="stylesheet">
+
+
+    <title>HERBS AND SEEDS</title>
+</head>
+<body>
+    <br>
+<div class="container">
+<ul>
+  <li><a href="home.html">HOME</a></li>
+  <li><a href="drink.html">DRINKS</a></li>
+  <li><a href="herb.html">HERBS & SEEDS</a></li>
+  <li><a href="tea.html">TEA</a></li>
+</ul>
+</div>
+
+    <div class="container">
+   <div class="row">
+        <div class="col-4" style="background-color: white;">
+              <div class="card-columns">
+  <!-- HEADER, FOOTER, CENTERED -->
+        <div class="card text-center" style="width:20rem">
+            <div class="card=header">
+            
+            </div>
+            <div class="card-body">
+
+                <p class="card-text">
+                    <img src="mee.jfif" width="250px">
+                                    <h4  class="card-title"> KITYAN LAI</h4>                    
+                    </p>
+                <a class="btn btn-outline-success" href="#">Read More</a>
+
+
+</div></div>
+</div>
+        </div>
+        <div class="col-8" style="background-color:white;">
+             <!-- SIMPLE SLIDER --><br><h1 class="share-tech-regular" style="text-align: center">HERB & SEEDS</h1>
+        <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" width="550" height="400">
+              <img class="d-block img-fluid" src="chickenn.jfif" width="550" height="400" alt="First Slide">
+            </div>
+            <div class="carousel-item" width="600" height="450" >
+              <img class="d-block img-fluid" src="turmericc.jfif" width="600" height="450px" alt="Second Slide">
+            </div>
+            <div class="carousel-item" width="600" height="500">
+              <img class="d-block img-fluid"  src="beet.jfif" width="600" height="500" alt="Third Slide">
+            </div>
+        </div></div>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function () {
+      console.log('SLIDE!');
+    });
+
+    $('#slider4').on('slid.bs.carousel', function () {
+      console.log('SLID!');
+    });
+
+  </script>
+
+</div>
+</div></div>
+
+
+            
+
+        
+<br><br>
+
+<div class="container" style="background-color: white;"><br>
+  <h1 class="share-tech-regular">HERBS</h1>  
+  <br>
+<a href="#section1"><div class="card-columns ">   <!-- card col 2.3-->
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="turmeric.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>TURMERIC</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div>
+
+<a href="#section2"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="cinnamon.jpeg" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>CINNAMON</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div></div>
+
+
+ <a href="#section3"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="moringa.jpg" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>MORINGA</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div></div></div>
+             
+<br><br>
+
+    <a href="#section4"><div class="container">
+ <div class="card-columns">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="curry.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>CURRY</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div>
+
+
+ <a href="#section5"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="mustard.jpg" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>MUSTARD</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+       </div></div></div></div>
+
+
+     <a href="#section6"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="garlic.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>GARLIC</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+</div></div></div></div></div>
+<br><br><br><br>
+
+</div></div></div></div></div></div></div>
+
+
+<br><br><br><br>
+<div class="container" style="background-color: white;">
+  <br>
+  <h1 class="share-tech-regular">SEEDS</h1><br>
+<a href="#sectionA"><div class="card-columns ">   <!-- card col 2.3-->
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="chickpeaa.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>CHICKPEA</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div>
+
+<a href="#sectionB"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="peaaa.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>PEA</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div></div>
+
+
+ <a href="#sectionC"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pumpkin.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>PUMPKIN SEEDS</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div></div></div>
+             
+<br><br>
+
+    <a href="#sectionD"><div class="container">
+ <div class="card-columns">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="flex.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br><br>
+      <h1>FLEXSEED</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+    </div></div></div>
+
+
+ <a href="#sectionE"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="chia.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>CHIA SEED</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+       </div></div></div></div>
+
+
+     <a href="#sectionF"><div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="blackseed.jfif" alt="Avatar" style="width:300px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>BLACK CUMIN SEED OIL</h1> 
+      <br>
+      <h3></h3> 
+      <p></p></a>
+</div></div></div></div></div>
+<br><br><br><br>
+
+</div></div></div></div></div></div></div>
+
+<br><br><br><br><br>
+
+
+<br><br><br><br>
+<div class="container" style="background-color: white;">
+  <br><br>
+<div class ="row">
+  <div class="col-5">
+<div id="section1">
+        <div class="card text-black bg-warning" style="width:30rem">
+            <div class="h1" style="color: black;">TURMERIC</div>
+            <div class="card-body">
+                <h4 class="card-title">Strong herb for reducing inflammation, aiding digestion, and supporting joint health.</h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like stomach upset.</p>
+            </div></div>
+        </div></div>
+<div class="col-1"></div>
+<div class="col-5">
+            <div>
+              <img style="width:500px; margin:auto; display: flex;" src="turmericc.jfif">
+            </div></div></div>
+<br>
+
+<div class="row">    
+           <div class="col-5">
+<div id="section2">
+            <div>
+              <img style="width:500px; margin:auto; display: flex;" src="chicken.jfif">
+            </div></div></div>
+        <div class="col-1"></div>
+
+           <div class="col-5">
+                <div class="card text-black bg-secondary" style="width:30rem">
+            <div class="h1" style="color: black;">CINNAMON</div>
+            <div class="card-body">
+                <h4 class="card-title">Contains antioxidants; some studies suggest it may help regulate blood sugar, reduce inflammation, or improve cholesterol levels.</h4>
+                <p class="card-text-danger" style="color: red;"></p>
+            </div></div>
+        </div></div>
+
+
+
+<br>
+
+
+<div class="row">
+            <div class="col-5">
+              <div id="section3">
+           <div class="card text-black bg-success" style="width:30rem">
+            <div class="h1" style="color: black;">MORINGA</div>
+            <div class="card-body">
+                <h4 class="card-title">It can boost immunity, reduce inflammation, improve digestion, and support skin and hair health. Some studies suggest potential benefits for blood sugar and cholesterol regulation, but evidence is preliminary and mixed. </h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like nausea or interact with medications.</p>
+            </div></div>
+        </div></div>
+
+<div class="col-1"></div>
+<div class="col-5">
+            <div>
+              <img style="width:500px; margin: auto; display: flex" src="moringaa.jfif">
+          
+        </div></div></div>
+<br>
+
+
+<div class="row">    
+           <div class="col-5">
+<div id="section4">
+            <div>
+              <img style="width:500px; margin:auto; display: flex;" src="ccurry.jfif">
+            </div></div></div>
+        <div class="col-1"></div>
+
+           <div class="col-5">
+                <div class="card text-black bg-danger" style="width:30rem">
+            <div class="h1" style="color: black;">CURRY</div>
+            <div class="card-body">
+                <h4 class="card-title">This includes a mix of spices.
+                  <li>Turmeric: Reduce inflammation and offer antioxidant support, potentially aiding joint and brain health.</li> 
+                  <li>Cinnamon: Help regulate blood sugar and provide antioxidants.</li>
+                  <li>Fenugreek: Improve digestion and support blood sugar control.</li>
+                  <li>Cumin: Enhance digestion and offer antioxidant properties.</li>
+                  <li>Coriander: Aid digestion and provide antioxidants.</li>
+                  <li>Paprika: Contains vitamin A and antioxidants, supports eye health.</li>
+                  <li>Cayenne: Boost metabolism and circulation, with anti-inflammatory potential.</li>
+                  <li>Cardamom: Aid digestion and freshen breath.</li>
+                  <li>Cloves: Have antioxidant and anti-inflammatory effects.</li>
+                  <li>Nutmeg: Support digestion and sleep, in small amounts.</li></h4>
+                <p class="card-text-danger" style="color: red;"></p>
+            </div></div>
+        </div></div>
+
+
+
+<br><br>
+
+
+<div class="row">
+            <div class="col-5">
+                <div class="card text-black bg-primary style="width:30rem">
+                  <div id="#section6">
+                  <div class="h1" style="color: black;">GARLIC</div>
+            <div class="card-body">
+                <h4 class="card-title">Contains antioxidants; some studies suggest it may help regulate blood sugar, reduce inflammation, or improve cholesterol levels.</h4>
+                <p class="card-text-danger" style="color: red;"></p>
+            </div></div></div>
+
+<br>
+              <div id="section5">
+           <div class="card text-black bg-warning" style="width:30rem">
+            <div class="h1" style="color: black;">MUSTARD</div>
+            <div class="card-body">
+                <h4 class="card-title">It can boost immunity, reduce inflammation, improve digestion, and support skin and hair health. Some studies suggest potential benefits for blood sugar and cholesterol regulation, but evidence is preliminary and mixed. </h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like nausea or interact with medications.</p>
+            </div></div>
+        </div>
+</div>
+
+<div class="col-1"></div>
+<div class="col-5">
+            <div>
+              <img style="width:500px; margin: auto; display: flex" src="mu.jfif">
+          
+        </div></div></div>
+<br>
+
+            </div></div></div></div></div>
+        </div></div>
+
+
+</div>
+</div></div>
+</div></div></div>
+    
+
+<br><br>
+
+
+<br><br><br><br>
+<div class="container" style="background-color: white;">
+  <br><br>
+<div class ="row">
+  <div class="col-5">
+<div id="sectionA">
+        <div class="card text-black bg-warning" style="width:30rem">
+            <div class="h1" style="color: black;">CHICKPEA</div>
+            <div class="card-body">
+                <h4 class="card-title">Strong herb for reducing inflammation, aiding digestion, and supporting joint health.</h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like stomach upset.</p>
+            </div></div>
+        </div>
+     <div id="sectionB">
+         <div class="card text-black bg-secondary" style="width:30rem">
+            <div class="h1" style="color: black;">PEA</div>
+            <div class="card-body">
+                <h4 class="card-title">Contains antioxidants; some studies suggest it may help regulate blood sugar, reduce inflammation, or improve cholesterol levels.</h4>
+                <p class="card-text-danger" style="color: red;"></p>
+            </div>
+            </div></div>
+            <div id="sectionE">
+           <div class="card text-black bg-warning" style="width:30rem">
+            <div class="h1" style="color: black;">CHIASEED</div>
+            <div class="card-body">
+                <h4 class="card-title">mixed. </h4>
+                <p class="card-text-danger" style="color: red;">cations.</p>
+            </div></div>
+        </div></div>  
+        
+<div class="col-1"></div>
+<div class="col-5">
+            <div>
+              <a href="drink.html"><img style="width:500px;  margin:auto; display: flex;" src="red.jfif"></a>
+            </div></div></div>
+
+
+<br>
+
+
+<div class="row">
+  <div class="col-5">
+            <div>
+              <a href="drink.html"><img style="width:500px; margin: auto; display: flex" src="greenn.jfif"></a>
+          
+        </div></div>
+
+<div class="col-1"></div>
+
+            <div class="col-5">
+              <div id="sectionD">
+           <div class="card text-black bg-success" style="width:30rem">
+            <div class="h1" style="color: black;">FLEXSEED</div>
+            <div class="card-body">
+                <h4 class="card-title">It can boost immunity, reduce inflammation, improve digestion, and support skin and hair health. Some studies suggest potential benefits for blood sugar and cholesterol regulation, but evidence is preliminary and mixed. </h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like nausea or interact with medications.</p>
+            </div></div>
+        </div></div></div>
+<br>
+<div class="row">    
+<div id="sectionC">        
+           <div class="col-5">
+                <div class="card text-black bg-danger" style="width:30rem">
+            <div class="h1" style="color: black;">PUMPKIN SEEDS</div>
+            <div class="card-body">
+                <h4 class="card-title">This includes a mix of spices.
+                 </h4>
+                <p class="card-text-danger" style="color: red;"></p>
+            </div></div>
+        </div></div>
+<div class="col-1"></div>
+            <div class="col-5">
+              <div>
+              <img style="width:500px; margin:auto; display: flex;" src="beet.jfif">
+            </div></div></div>
+
+
+
+<br>
+
+
+<div class="row">
+  <div class="col-5">
+            <div>
+              <img style="width:500px; margin: auto; display: flex" src="mu.jfif">
+        </div></div>
+        <div class="col-1"></div>
+            <div class="col-5">
+              <div id="sectionF">
+           <div class="card text-black bg-warning" style="width:30rem">
+            <div class="h1" style="color: black;">BLACK CUMIN SEED OIL</div>
+            <div class="card-body">
+                <h4 class="card-title">It can boost immunity, reduce inflammation, improve digestion, and support skin and hair health. Some studies suggest potential benefits for blood sugar and cholesterol regulation, but evidence is preliminary and mixed. </h4>
+                <p class="card-text-danger" style="color: red;">High doses may cause side effects like nausea or interact with medications.</p>
+            </div></div>
+        </div></div>
+
+<br>
+
+
+
+
+
+</body>
+</html>

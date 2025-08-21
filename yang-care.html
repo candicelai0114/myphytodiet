@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<!-- cara -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+
+
+  <title>陽虛調理</title>
+  <meta name="description" content="了解陽虛嘅症狀同調理方法，推薦薑湯、韭菜等溫陽食材。">
+  <meta name="keywords" content="陽虛, 溫陽, 薑湯, 韭菜, 中醫養生">
+<style>
+body{
+background-color: lightgreen;
+
+
+}
+
+.container{
+  background-color: whitesmoke;
+  width: 70%;
+
+
+}
+
+.a{
+    background-color: lightgreen;
+}
+
+
+li a, .dropbtn {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: greenyellow;
+}
+
+li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ .dropbtn{
+background-color: lightgreen;
+border: forestgreen 10px;
+
+}
+        
+.active{
+    border: forestgreen 10px;
+}
+
+
+
+
+
+.content-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: lightgreen;
+  opacity: 90%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-card img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+content-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-card ul li {
+  margin-bottom: 10px;
+}
+
+.content-card a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+  margin:auto;
+  display: flex;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: green;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+        .rcorners1{
+        border-radius: 100px 0px 100px;
+        background-color: yellowgreen;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners2{
+        border-radius: 0 100px 0px;
+        background-color: green;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners3{
+        border-radius: 100px 0px 100px;
+        background-color: yellowgreen;
+        padding: 70px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+        .rcorners4{
+        border-radius: 0px 100px 0px;
+        background-color: green;
+        padding: 80px;
+        width: 40px;
+        height: 50px;
+        font-size: x-large;
+        color: black;
+        font-weight: 900;
+        }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: greenyellow;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+
+<div class="a" style="width: 100%;">
+<div class="row">
+<div class="dropdown">
+  <button class="dropbtn">中醫症狀</button>
+  <div class="dropdown-content">
+        <a href="yin-care.html">陰虛火旺</a>
+      <a href="yang-care.html">陽虛</a>
+      <a href="qi-care.html">氣虛</a>
+      <a href="phlegm-care.html">肝鬱氣滯</a>    
+      <a href="damp-care.html">濕氣重</a>
+      <a href="liver-care.html">痰濕體質</a>
+  </div>
+
+</div>
+<a class="dropdown">
+    <button class="dropbtn">
+    <a href="quiz.html" style="color: black;">QUIZ</a></button>
+</div>
+
+</div>
+
+  <br>
+<div class="container">
+  <header>
+  <h1>陽虛調理</h1>
+    <p>用天然食材溫陽補氣，改善手腳冰冷同腰膝酸軟</p>
+  </header>
+</div>
+  <div class="container">
+<div class="row">
+  <div class="col-5">
+    <div class="content-card">
+      <div class="row">
+<div class="rcorners2">怕冷</div>
+<div class="rcorners1">乏力</div>
+</div>
+      <div class="row">
+<div class="rcorners3">腹脹</div>
+<div class="rcorners4">月經</div>
+</div>
+
+
+<br>      
+ <h2>陽虛嘅症狀</h2>
+      <ul>
+        <li>手腳冰冷或怕冷</li>
+        <li>腰膝酸軟或乏力</li>
+        <li>消化慢或腹脹</li>
+        <li>性功能減退或月經不調</li>
+      </ul>
+      <p>陽虛通常由體質虛寒、過食生冷或過勞引起，中醫建議溫陽散寒來改善。</p>
+    </div></div>
+<div class="col-7">
+    <div class="content-card" style="width: fit-content;">
+      <h2>推薦溫陽食材</h2>
+<div class="row">
+  <div class="col-6">
+<div class="card-columns ">   <!-- card col 2.3-->
+     <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="a.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>薑</h1> 
+      <h3>溫陽散寒，適合煮湯或茶。</h3> 
+      <p></p></a>
+    </div></div></div></div></div>
+
+    <div class="col-6">
+<div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="b.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>韭菜</h1> 
+      <h3>溫補腎陽，可炒菜或做餡。</h3> 
+      <p></p></a>
+    </div></div></div></div>
+</div></div>
+<br>
+<div class="row">
+  <div class="col-6">
+ <div class="card-columns ">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="cinnamon.jpeg" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>肉桂</h1> 
+      <h4>溫補脾腎，常用於調味或泡茶。</h4> 
+      <p></p></a>
+    </div></div></div></div>
+</div>
+    
+      <div class="col-6">
+   <div class="card-columns">   <!-- card col 2.3-->
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="c.jfif" alt="Avatar" style="width:250px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+        <br><br>
+      <h1>核桃</h1> 
+      <h3>溫補腎陽，適合同其他食材煮粥。</h3> 
+      <p></p></a>
+    </div></div></div></div>
+</div></div>
+
+      <a href="herb.html" style="color: black;">探索更多草本與種子</a>
+    
+</div></div>
+
+        <div class="col-5">
+    <div class="content-card">
+     <h2>推薦飲品</h2>
+      <ul>
+        <li><strong>薑湯</strong>：溫陽散寒，加入紅棗增強效果。</li>
+        <li><strong>肉桂茶</strong>：溫補脾腎，適合冬季飲用。</li>
+      </ul>
+      <a href="tea.html">查看更多茶飲建議</a>
+</div>    </div>
+<div class="col-5">
+    <div class="content-card">
+         <h2>簡單食譜：薑韭菜粥</h2>
+      <p>材料：薑10g、韭菜50g、糙米50g、清水適量</p>
+      <p>做法：糙米煮20分鐘，加切碎嘅薑同韭菜續煮10分鐘，溫服。</p>
+      <p>功效：溫陽補氣，適合早餐或晚餐。</p>
+    </div></div>
+
+</div>
+  <footer>
+    <p>© 2025 My Phyto Diet | <a href="https://your-affiliate-link.com">推薦有機桑葚</a></p>
+  </footer>
+</body>
+</div>
+</html>
