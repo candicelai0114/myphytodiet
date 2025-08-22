@@ -34,22 +34,7 @@ body {
     padding: 20px;
 }
 
-/* 手機樣式 (螢幕寬度小於 768px) */
-@media (max-width: 768px) {
-    .rcorner {
-        margin: 5px; /* 減少間距 */
-        padding: 15px; /* 減少內距 */
-        width: 95%; /* 寬度適應螢幕 */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    /* 手機上圓角變小 */
-    .rcorners1 { border-radius: 8px; }
-    .rcorners2 { border-radius: 8px; }
-    .rcorners3 { border-radius: 8px; }
-    .rcorners4 { border-radius: 8px; }
-}
+
 
 /* 手機樣式 */
 @media (max-width: 768px) {
@@ -57,15 +42,21 @@ body {
         width: 100% !important;
         padding: 10px;
     }
+
     
+    /* 手機上圓角變小 */
+    .rcorners1 { border-radius: 8px; }
+    .rcorners2 { border-radius: 8px; }
+    .rcorners3 { border-radius: 8px; }
+    .rcorners4 { border-radius: 8px; }
+
+
+
     .#section1 {
         flex-direction: column;
     }
     
-    .#section1 {
-        width: 100% !important;
-        margin: 10px 0;
-    }
+
     
     /* 調整文字大小 */
     h1 { font-size: 24px; }
