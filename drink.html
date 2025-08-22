@@ -22,16 +22,35 @@ body {
 
 }
 
+
+
+/* 基礎圓角樣式 */
+.rcorner {
+    overflow: hidden; /* 重要：確保內容不溢出圓角 */
+    margin: 10px;
+    padding: 20px;
+}
+
+/* 手機樣式 (螢幕寬度小於 768px) */
 @media (max-width: 768px) {
-    .rcorners1, .rcorners2, .rcorners3, rcorners4 {
-        border-radius: 10px; /* 手機上圓角小一點 */
-        margin: 10px; /* 添加間距 */
-        width: 90%; /* 寬度適應螢幕 */
+    .rcorner {
+        margin: 5px; /* 減少間距 */
+        padding: 15px; /* 減少內距 */
+        width: 95%; /* 寬度適應螢幕 */
         margin-left: auto;
         margin-right: auto;
     }
-
+    
+    /* 手機上圓角變小 */
+    .rcorners1 { border-radius: 8px; }
+    .rcorners2 { border-radius: 12px; }
+    .rcorners3 { border-radius: 16px; }
+    .rcorners4 { border-radius: 20px; }
 }
+
+
+
+
 .container{
 
     background-color: white;
